@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D9c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EUz-JO-JdD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SF_Wonder_Comic.ttf">
+            <string>SFWonderComic</string>
+            <string>SFWonderComic</string>
+            <string>SFWonderComic</string>
+            <string>SFWonderComic</string>
+            <string>SFWonderComic</string>
+            <string>SFWonderComic</string>
+            <string>SFWonderComic</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LVB-YS-i5n" customClass="GameViewController" customModule="Sort" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="226"/>
+        </scene>
+        <!--Home ScreenVC-->
+        <scene sceneID="vEi-a1-a55">
+            <objects>
+                <viewController id="EUz-JO-JdD" customClass="HomeScreenVC" customModule="Sort" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RJX-Td-jj7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ook-3S-NVt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eqp-9d-lKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yJ-81-yPd">
+                                <rect key="frame" x="210" y="30" width="180" height="69"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="0C7-UQ-1bR"/>
+                                    <constraint firstAttribute="width" constant="180" id="Hp3-sj-ZpY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFWonderComic" family="SF Wonder Comic" pointSize="50"/>
+                                <color key="textColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4J-8R-b9Q">
+                                <rect key="frame" x="240" y="149" width="120" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="INY-Gs-kgd"/>
+                                    <constraint firstAttribute="height" constant="64" id="dmx-Ed-I58"/>
+                                    <constraint firstAttribute="width" constant="120" id="dyO-Tf-wIx"/>
+                                    <constraint firstAttribute="width" constant="128" id="rpN-6d-hU2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFWonderComic" family="SF Wonder Comic" pointSize="34"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="INY-Gs-kgd"/>
+                                        <exclude reference="rpN-6d-hU2"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="PlayButtonPressed:" destination="EUz-JO-JdD" eventType="touchUpInside" id="Xya-aN-R6s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxi-Cf-VPW">
+                                <rect key="frame" x="195" y="263" width="210" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="INf-ei-aM1"/>
+                                    <constraint firstAttribute="width" constant="210" id="wyn-xn-YRw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFWonderComic" family="SF Wonder Comic" pointSize="34"/>
+                                <state key="normal" title="How to Play?">
+                                    <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UKs-4X-H0w" kind="show" id="HWj-UZ-6cA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmt-dZ-2hi">
+                                <rect key="frame" x="217" y="375" width="167" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="EUS-Bv-g0f"/>
+                                    <constraint firstAttribute="height" constant="70" id="VVP-T1-swY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFWonderComic" family="SF Wonder Comic" pointSize="34"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qxi-Cf-VPW" firstAttribute="centerX" secondItem="Eqp-9d-lKJ" secondAttribute="centerX" id="11f-yW-u0c"/>
+                            <constraint firstItem="8yJ-81-yPd" firstAttribute="top" secondItem="RJX-Td-jj7" secondAttribute="bottom" constant="10" id="FGO-Vm-qpi"/>
+                            <constraint firstItem="jmt-dZ-2hi" firstAttribute="top" secondItem="qxi-Cf-VPW" secondAttribute="bottom" constant="60" id="Kfg-6E-bvz"/>
+                            <constraint firstItem="qxi-Cf-VPW" firstAttribute="top" secondItem="Q4J-8R-b9Q" secondAttribute="bottom" constant="50" id="TjT-PU-uFj"/>
+                            <constraint firstItem="Q4J-8R-b9Q" firstAttribute="top" secondItem="8yJ-81-yPd" secondAttribute="bottom" constant="50" id="bKP-v4-zf4"/>
+                            <constraint firstItem="jmt-dZ-2hi" firstAttribute="centerX" secondItem="Eqp-9d-lKJ" secondAttribute="centerX" id="hK9-pN-uF9"/>
+                            <constraint firstItem="Q4J-8R-b9Q" firstAttribute="centerX" secondItem="Eqp-9d-lKJ" secondAttribute="centerX" id="lqe-mp-J8X"/>
+                            <constraint firstItem="8yJ-81-yPd" firstAttribute="centerX" secondItem="Eqp-9d-lKJ" secondAttribute="centerX" id="sDJ-cH-48j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HighScoreLabel" destination="jmt-dZ-2hi" id="vYt-V8-gFa"/>
+                        <outlet property="SortTitle" destination="8yJ-81-yPd" id="En4-WJ-cTZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0u-GG-wWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339" y="226"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pwl-rN-H8E">
+            <objects>
+                <viewController id="UKs-4X-H0w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ddK-sg-2e8"/>
+                        <viewControllerLayoutGuide type="bottom" id="6l7-3h-65K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rXy-Vn-4EJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Play?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQS-lz-Rdi">
+                                <rect key="frame" x="150" y="40" width="300" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ARG-XU-LDE"/>
+                                    <constraint firstAttribute="height" constant="70" id="Fp8-yV-BX0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFWonderComic" family="SF Wonder Comic" pointSize="45"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" editable="NO" text="Swipe the shape to the correct outlined position before it fades away and don't swipe to the wrong direction. Good Luck!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymv-D7-26L">
+                                <rect key="frame" x="140" y="177" width="320" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="B4D-fP-4Yq"/>
+                                    <constraint firstAttribute="width" constant="320" id="y2I-QJ-emn"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFWonderComic" family="SF Wonder Comic" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEY-VV-euJ">
+                                <rect key="frame" x="224" y="398" width="153" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Uru-0y-8nl"/>
+                                    <constraint firstAttribute="width" constant="153" id="V58-v4-RHZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFWonderComic" family="SF Wonder Comic" pointSize="34"/>
+                                <state key="normal" title="Lets Play!">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LVB-YS-i5n" kind="show" id="qAw-uZ-tey"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ymv-D7-26L" firstAttribute="centerX" secondItem="rXy-Vn-4EJ" secondAttribute="centerX" id="6ZI-7v-DYC"/>
+                            <constraint firstItem="ymv-D7-26L" firstAttribute="top" secondItem="iQS-lz-Rdi" secondAttribute="bottom" constant="67" id="AoO-ZX-j44"/>
+                            <constraint firstItem="eEY-VV-euJ" firstAttribute="top" secondItem="ymv-D7-26L" secondAttribute="bottom" constant="38" id="L5s-ey-Tt5"/>
+                            <constraint firstItem="eEY-VV-euJ" firstAttribute="centerX" secondItem="rXy-Vn-4EJ" secondAttribute="centerX" id="XiJ-E0-VAv"/>
+                            <constraint firstItem="iQS-lz-Rdi" firstAttribute="top" secondItem="ddK-sg-2e8" secondAttribute="bottom" constant="20" id="p16-Sb-zYg"/>
+                            <constraint firstItem="iQS-lz-Rdi" firstAttribute="centerX" secondItem="rXy-Vn-4EJ" secondAttribute="centerX" id="vSK-Rv-C98"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fx7-r5-IpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1042" y="237"/>
+        </scene>
+    </scenes>
+</document>
